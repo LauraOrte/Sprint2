@@ -1,0 +1,115 @@
+-- OPTICA
+db.proveidors.insertMany([{
+	nom: 'proveidor1',
+	adreça:  {
+	    	calle: 'Calleproveidor1',
+		num: 2,
+		ciudad: 'Barcelona,
+		pais: 'Espanya'
+		codigo_postal: 08007
+		},
+	telf: 938192831
+	fax: 11818181
+	nif: 11818181
+},
+{
+	nom: 'proveidor2',
+	adreça:  {
+	    	calle: 'Calleproveidor2',
+		num: 4,
+		ciudad: 'Barcelona,
+		pais: 'Espanya'
+		codigo_postal: 08033
+		},
+	telf: 938192123
+	fax: 01010101
+	nif: 01010101
+},
+{
+	nom: 'proveidor3',
+	adreça:  {
+	    	calle: 'Calleproveidor3',
+		num: 5,
+		ciudad: 'Barcelona,
+		pais: 'Espanya'
+		codigo_postal: 08011
+		},
+	telf: 93000000
+	fax: 92929292
+	nif: 92929292
+}])
+
+db.clients.insertMany([{
+	nom: 'Maria',
+	cognom:'Perez',
+	codigo_postal: 01283,
+	email: 'Mariaperez@gmail.com',
+	telf: 65748392,
+	fecha_registro: new Date('marz 20, 2021'),
+	cliente_recomendat: 'cliente3',
+	ulleresComprades: {
+		marca: 'Rayban',
+		preu: 56.70,
+		color_vidres: 'azul',
+		color_montura: 'negra',
+		tipus_montura: 'metalica',
+		graduacio_dreta: 1.25,
+		graduacio_esquerra: 3.25,
+		proveidor: 'proveidor3',
+		empleat: 'empleat1'
+	}
+},
+{
+
+	nom: 'Marc',
+	cognom: 'ortiz',
+	codigo_postal: 01990,
+	email: 'MarcOrtiz@gmail.com',
+	telf: 6511111,
+	fecha_registro: new Date('marz 23, 2021'),
+	cliente_recomendat: 'cliente1',
+	ulleresComprades: [{
+		marca: 'Persol',
+		preu: 99.70,
+		color_vidres: 'negra',
+		color_montura: 'negra',
+		tipus_montura: 'pasta',
+		graduacio_dreta: 4.25,
+		graduacio_esquerra: 3.25,
+		proveidor: 'proveidor1',
+		empleat: 'empleat2'
+	},
+	{
+		marca: 'Persol',
+		preu: 120,
+		color_vidres: 'negra',
+		color_montura: 'negra',
+		tipus_montura: 'pasta',
+		graduacio_dreta: 4.25,
+		graduacio_esquerra: 3.25,
+		proveidor: 'proveidor1',
+		empleat: 'empleat2'
+	}
+	]
+},
+{
+	nom: 'Jose',
+	cognom:'Lopez',
+	codigo_postal: 01777,
+	email: 'joselopez@gmail.com',
+	telf: 61122222,
+	fecha_registro: new Date('marz 25, 2021'),
+	cliente_recomendat: 'cliente3',
+	ulleresComprades: {
+		marca: 'Tous',
+		preu: 80.70,
+		color_vidres: 'negra',
+		color_montura: 'negra',
+		tipus_montura: 'metalica',
+		graduacio_dreta: 6.25,
+		graduacio_esquerra: 5.25,
+		proveidor: 'proveidor3',
+		empleat: 'empleat1'
+	}
+}
+])
