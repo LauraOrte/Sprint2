@@ -28,6 +28,9 @@ db.botiga.insertMany([{
 }]);
 
 db.clients.insertMany([{
+    "_id": {
+    ObjectId("00000000000000001")
+  },
     "clients": {
     "nom": "Maria",
     "cognom": "Lopez",
